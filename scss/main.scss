@@ -492,7 +492,24 @@ a {
   max-width: none;
   padding: 10px;
   box-shadow: inset 0 0 15px #63C9FF;
-  animation: glow 1.5s ease-in-out infinite alternate ;
+}
+.boite:active{
+  max-height: 1500px;
+  max-width: none;
+  padding: 10px;
+  box-shadow: inset 0 0 15px #63C9FF;
+}
+
+.titrehide h2 {
+    display: none !important;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.boite:hover .titrehide h2 {
+    display: block !important;
+    opacity: 1;
+    animation: glow 1.5s ease-in-out infinite alternate ;
 }
 
 .gallery {
